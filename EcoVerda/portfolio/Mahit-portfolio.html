@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+        /* Theme Colors */
+        :root {
+            --primary: #0b3d2e;
+            /* Dark forest green */
+            --secondary: #145a32;
+            --light: #f4f8f6;
+            --dark: #1f2d27;
+            --gray: #5f6f68;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+            margin: 0;
+            padding: 32px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 6px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 48px 32px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 35.2px;
+        }
+
+        .tagline {
+            font-size: 17.6px;
+            opacity: 0.9;
+            margin-bottom: 24px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 14.4px;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.18);
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 32px;
+            border-bottom: 1px solid #e3e8e5;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin: 0 0 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        /* About */
+        .about p {
+            color: var(--gray);
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12.8px;
+        }
+
+        .skill {
+            background: #e6f2ed;
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14.4px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 32px;
+        }
+
+        .project h3 {
+            margin-bottom: 6.4px;
+            color: var(--dark);
+        }
+
+        .project p {
+            color: var(--gray);
+            font-size: 15.2px;
+        }
+
+        .tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        /* Tech Tags */
+        .tech-tag {
+            background: #dceee6;
+            color: var(--secondary);
+            padding: 4px 12.8px;
+            border-radius: 12px;
+            font-size: 12.8px;
+        }
+
+        /* Contact */
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            padding: 12.8px 24px;
+            border-radius: 6px;
+            font-size: 15.2px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #062c21;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+
+            .header {
+                padding: 32px 16px;
+            }
+
+            .section {
+                padding: 24px;
+            }
+
+            .avatar {
+                width: 100px;
+                height: 100px;
+                font-size: 40px;
+            }
+
+            h1 {
+                font-size: 28.8px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../pages/about.html"
+        style="position:fixed; top:20px; right:20px; font-size:30px; color:#333; text-decoration:none; background:white; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 5px rgba(0,0,0,0.2); z-index:1000;"
+        title="Close & Return">&times;</a>
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="avatar">MS</div>
+            <h1>Mahit Shrestha</h1>
+            <p class="tagline">Web Developer & AI Student</p>
+
+            <div class="contact-info">
+                <div class="contact-item">Gmail: np01ai4a250086@islingtoncollege.edu.np</div>
+                <div class="contact-item">Phone: +977 9767661438</div>
+                <div class="contact-item">College: Islington College</div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="section about">
+            <h2>About Me</h2>
+            <p>
+                I'm a Computing with AI student studying at Islington College.
+                Currently learning and exploring web technologies, web design,
+                and AI tools. I’m curious, motivated, and enjoy working collaboratively.
+            </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Java</div>
+                <div class="skill">GitHub</div>
+                <div class="skill">Responsive Design</div>
+                <div class="skill">Problem Solving</div>
+                <div class="skill">Basic Python</div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>EcoVerda E-commerce</h3>
+                <p>
+                    Online eco-friendly product shopping platform with responsive
+                    design and cart functionality.
+                </p>
+                <div class="tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section">
+            <h2>Contacts</h2>
+            <div class="contact-links">
+                <a href="mailto:np01ai4a250086@islingtoncollege.edu.np" class="btn">
+                    Email
+                </a>
+                <a href="tel:+9779767661438" class="btn">
+                    Phone
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

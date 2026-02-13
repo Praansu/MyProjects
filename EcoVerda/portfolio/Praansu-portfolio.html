@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praansu Karmacharya | Portfolio</title>
+    <style>
+        /* Theme Colors */
+        :root {
+            --primary: #1b4d3e;
+            --primary-light: #2d7a62;
+            --accent: #d4a373;
+            --light: #f8faf9;
+            --dark: #1a1a1a;
+            --gray: #666;
+            --white: #ffffff;
+            --font-main: 'Inter', sans-serif;
+            --font-heading: 'Playfair Display', serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+            margin: 0;
+            padding: 32px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary), #143a2d);
+            color: white;
+            padding: 48px 32px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            font-family: var(--font-heading);
+            color: var(--white);
+        }
+
+        h1 {
+            margin: 0 0 8px 0;
+            font-size: 40px;
+            font-family: var(--font-heading);
+        }
+
+        .tagline {
+            font-size: 17.6px;
+            opacity: 0.9;
+            margin-bottom: 24px;
+            color: #ccc;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 14.4px;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 40px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin: 0 0 24px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            font-family: var(--font-heading);
+            display: inline-block;
+        }
+
+        /* Text & Lists */
+        .section p {
+            color: var(--gray);
+            margin: 0 0 16px 0;
+            font-size: 16.8px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12.8px;
+        }
+
+        .skill {
+            background: #e9ecef;
+            color: var(--primary);
+            padding: 8px 19.2px;
+            border-radius: 20px;
+            font-size: 14.4px;
+            font-weight: 500;
+        }
+
+        /* Entries */
+        .entry {
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .entry:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .entry h3 {
+            margin: 0 0 4.8px 0;
+            color: var(--dark);
+            font-family: var(--font-heading);
+            font-size: 22.4px;
+        }
+
+        .entry-meta {
+            font-size: 14.4px;
+            color: var(--accent);
+            margin-bottom: 12.8px;
+            font-weight: 600;
+            display: block;
+        }
+
+        /* Buttons */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 12.8px 24px;
+            border-radius: 50px;
+            font-size: 15.2px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 5px 15px rgba(27, 77, 62, 0.2);
+        }
+
+        .btn:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(27, 77, 62, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+
+            .header {
+                padding: 32px 16px;
+            }
+
+            .section {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../pages/about.html"
+        style="position:fixed; top:20px; right:20px; font-size:30px; color:#333; text-decoration:none; background:white; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 5px rgba(0,0,0,0.2); z-index:1000;"
+        title="Close & Return">&times;</a>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="avatar">PK</div>
+            <h1>Praansu Karmacharya</h1>
+            <p class="tagline">Lead Developer & Student</p>
+            <div class="contact-info">
+                <div class="contact-item">praansu12@gmail.com</div>
+                <div class="contact-item">9818759455</div>
+                <div class="contact-item">Teku, Kathmandu</div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="section">
+            <h2>Profile</h2>
+            <p>
+                I am a motivated student currently studying at Islington College, Kathmandu.
+                I have a strong interest in programming and software development, and I enjoy
+                learning new technologies while building practical projects.
+            </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill">Java</div>
+                <div class="skill">Python</div>
+                <div class="skill">C</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">QBasic</div>
+                <div class="skill">Web Development</div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2>Education</h2>
+
+            <div class="entry">
+                <h3>Islington College</h3>
+                <span class="entry-meta">Currently Studying | Kathmandu</span>
+                <p>Focusing on Computing and Artificial Intelligence.</p>
+            </div>
+
+            <div class="entry">
+                <h3>Global School of Science</h3>
+                <span class="entry-meta">+2 (High School)</span>
+                <p>Completed higher secondary education with a science major.</p>
+            </div>
+
+            <div class="entry">
+                <h3>Rosebud School</h3>
+                <span class="entry-meta">Schooling</span>
+                <p>Completed secondary school education.</p>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <h2>Projects</h2>
+
+            <div class="entry">
+                <h3>EcoVerda Website</h3>
+                <span class="entry-meta">Web Development</span>
+                <p>Developed an eco-friendly website focused on sustainability and clean design. The project helped me
+                    improve my understanding of web development fundamentals.</p>
+            </div>
+
+            <div class="entry">
+                <h3>QBasic Programs</h3>
+                <span class="entry-meta">Programming Logic</span>
+                <p>Created multiple logic-based programs using QBasic to strengthen problem-solving skills and
+                    programming basics.</p>
+            </div>
+        </div>
+
+        <!-- Strengths -->
+        <div class="section">
+            <h2>Key Strengths</h2>
+            <div class="skills-list">
+                <div class="skill" style="background:#fff3e0; color:#d4a373;">Quick Learner</div>
+                <div class="skill" style="background:#fff3e0; color:#d4a373;">Logical Thinking</div>
+                <div class="skill" style="background:#fff3e0; color:#d4a373;">Multilingual</div>
+                <div class="skill" style="background:#fff3e0; color:#d4a373;">Adaptable</div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section">
+            <div class="contact-links">
+                <a href="mailto:praansu12@gmail.com" class="btn">Email Me</a>
+                <a href="tel:9818759455" class="btn">Call Me</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

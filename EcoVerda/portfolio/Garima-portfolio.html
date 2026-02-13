@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garima Dangol | Portfolio</title>
+    <style>
+        /*root color variables*/
+        :root {
+            --primary: #1a321b;
+            /* Eco green */
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+            --gray: #666;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+            margin: 0;
+            padding: 32px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(18, 69, 69, 0.08);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary), #4CAF50);
+            color: white;
+            padding: 48px 32px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0 0 8px 0;
+            font-size: 35.2px;
+        }
+
+        .tagline {
+            font-size: 17.6px;
+            opacity: 0.9;
+            margin-bottom: 24px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 14.4px;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 32px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin: 0 0 24px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        /* About */
+        .about p {
+            color: var(--gray);
+            margin: 0 0 16px 0;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12.8px;
+        }
+
+        .skill {
+            background: #e8f5e9;
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14.4px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+        }
+
+        .project h3 {
+            margin: 0 0 8px 0;
+            color: var(--dark);
+        }
+
+        .project p {
+            color: var(--gray);
+            margin: 0 0 12.8px 0;
+            font-size: 15.2px;
+        }
+
+        /*Technology tags container*/
+        .tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tag {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 3.2px 12.8px;
+            border-radius: 12px;
+            font-size: 12.8px;
+        }
+
+        /* Contact */
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        /*button styling*/
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 12.8px 24px;
+            border-radius: 6px;
+            font-size: 15.2px;
+        }
+
+        /*Button hover effec*/
+        .btn:hover {
+            background: #1b5e20;
+        }
+
+        /* Responsive design for mobile screens*/
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+
+            .header {
+                padding: 32px 16px;
+            }
+
+            .section {
+                padding: 24px;
+            }
+
+            .avatar {
+                width: 100px;
+                height: 100px;
+                font-size: 40px;
+            }
+
+            h1 {
+                font-size: 28.8px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .contact-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../pages/about.html"
+        style="position:fixed; top:20px; right:20px; font-size:30px; color:#333; text-decoration:none; background:white; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 5px rgba(0,0,0,0.2); z-index:1000;"
+        title="Close & Return">&times;</a>
+    <div class="container">
+        <!-- Header section -->
+        <div class="header">
+            <div class="avatar">GD</div>
+            <h1>Garima Dangol</h1>
+            <p class="tagline">Web Developer & AI Student</p>
+            <div class="contact-info">
+                <div class="contact-item">Gmail: garimadangol012@gmail.com</div>
+                <div class="contact-item">Phone: +977 9768445687</div>
+                <div class="contact-item">College: Islington College</div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section about">
+            <h2>About Me</h2>
+            <p>I'm a Computing with AI student studying in Islington College.
+                Currently learning and exploring web technology, web-designs, and AI tools. I am curious and motivated
+                to learn and explore new ideas. I enjoy solving problems and exploring innovative ideas with others.
+                I am good with team projects. I aim to solve problems that creates a positive impact and keep on
+                learning. </p>
+
+        </div>
+
+        <!-- Skills Section-->
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Java</div>
+                <div class="skill">GitHub</div>
+                <div class="skill">Responsive Design</div>
+                <div class="skill">Problem Solving</div>
+                <div class="skill">Basic Python</div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>EcoVerda E-commerce</h3>
+                <p>Online eco-friendly product shopping platform with responsive design and cart functionality.</p>
+                <div class="tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section">
+            <h2>Contacts</h2>
+            <div class="contact-links">
+                <a href="mailto:garimadangol012@gmail.com" class="btn">
+                    Email: garimadangol012
+                </a>
+                <a href="tel:+9779768445687" class="btn">
+                    Phone Number : 9768445687
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
