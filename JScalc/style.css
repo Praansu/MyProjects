@@ -1,0 +1,182 @@
+/* Basic settings to clear browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    /* Cool gradient background for the whole page */
+    background: radial-gradient(circle at top left, #1a1a2e, #16213e, #0f3460);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Container for the calculator to keep it centered */
+.calculator-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* This creates that translucent "glass" look */
+.glass-calculator {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    /* Smooth entry animation when page loads */
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Simple fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling the area where numbers are shown */
+.display-wrapper {
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 15px 20px;
+    text-align: right;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Small text for old calculations */
+.history {
+    height: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 5px;
+    min-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Main number input styling */
+#calc-display {
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 2.8rem;
+    color: #fff;
+    text-align: right;
+    outline: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* Organizing buttons into a 4-column grid */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Base style for all buttons */
+.btn {
+    height: 68px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Light highlight when hovering */
+.btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Button "press" effect */
+.btn:active {
+    transform: scale(0.92);
+}
+
+/* Numbers are a bit more prominent */
+.btn.num {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn.num:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Operator buttons (plus, minus, etc.) */
+.operator {
+    background: rgba(78, 108, 250, 0.15);
+    color: #a5b4fc;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.operator:hover {
+    background: rgba(78, 108, 250, 0.25);
+    color: #fff;
+}
+
+/* Reddish tint for Clear and Delete */
+.btn.accent {
+    color: #ff8787;
+    background: rgba(255, 107, 107, 0.12);
+    font-weight: 600;
+}
+
+.btn.accent:hover {
+    background: rgba(255, 107, 107, 0.2);
+}
+
+/* Beautiful gradient for the equals button */
+.equal {
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    box-shadow: 0 8px 15px rgba(99, 102, 241, 0.3);
+}
+
+.equal:hover {
+    box-shadow: 0 12px 20px rgba(99, 102, 241, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Used to make a button take up two grid slots */
+.span-two {
+    grid-column: span 2;
+}
+
+/* Making it look okay on smaller screens */
+@media (max-width: 400px) {
+    .glass-calculator {
+        width: 320px;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Google Fonts to make it look nicer -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculator-container">
+        <div class="glass-calculator">
+            <!-- This is where the numbers show up -->
+            <div class="display-wrapper">
+                <div id="history" class="history"></div>
+                <input type="text" id="calc-display" readonly placeholder="0">
+            </div>
+
+            <!-- The grid of buttons for the user to click -->
+            <div class="buttons-grid">
+                <!-- Top row: Clear, Delete and basic operators -->
+                <button class="btn accent clear" onclick="clearAll()">AC</button>
+                <button class="btn accent" onclick="backspace()">DEL</button>
+                <button class="btn operator" onclick="addToScreen('%')">%</button>
+                <button class="btn operator" onclick="addToScreen('/')">÷</button>
+
+                <!-- Number pad starting from 7 -->
+                <button class="btn num" onclick="addToScreen('7')">7</button>
+                <button class="btn num" onclick="addToScreen('8')">8</button>
+                <button class="btn num" onclick="addToScreen('9')">9</button>
+                <button class="btn operator" onclick="addToScreen('*')">×</button>
+
+                <!-- Middle row of numbers -->
+                <button class="btn num" onclick="addToScreen('4')">4</button>
+                <button class="btn num" onclick="addToScreen('5')">5</button>
+                <button class="btn num" onclick="addToScreen('6')">6</button>
+                <button class="btn operator" onclick="addToScreen('-')">−</button>
+
+                <!-- Bottom row of numbers -->
+                <button class="btn num" onclick="addToScreen('1')">1</button>
+                <button class="btn num" onclick="addToScreen('2')">2</button>
+                <button class="btn num" onclick="addToScreen('3')">3</button>
+                <button class="btn operator" onclick="addToScreen('+')">+</button>
+
+                <!-- Zero, decimal, and the equals button -->
+                <button class="btn num" onclick="addToScreen('0')">0</button>
+                <button class="btn num" onclick="addToScreen('.')">.</button>
+                <button class="btn equal span-two" onclick="runCalculation()">=</button>
+            </div>
+        </div>
+    </div>
+    <!-- Internal logic is kept in a separate JS file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
