@@ -1,7 +1,3 @@
-
-// Simple calculator script by a human developer
-// Handles all the math and button clicks
-
 // Reference the screen elements so we can update them easily
 const mainScreen = document.getElementById('calc-display');
 const historyLabel = document.getElementById('history');
