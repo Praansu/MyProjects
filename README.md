@@ -1,10 +1,11 @@
 # MyProjects
 
-Small projects and experiments I built while learning:
+Small projects I built while learning to code. Simple stuff that helped me understand the basics.
 
-- **JS Calculator** — a calculator built with vanilla JavaScript
-- **Python Calculator** — a command-line calculator in Python
+## Projects
 
-See also:
-- [eco-verda](https://github.com/Praansu/eco-verda) — e-commerce site built with HTML/CSS/JS
-- [data-classifier](https://github.com/Praansu/data-classifier) — Python data categorisation tool
+- **Todo List** — CLI app that saves tasks to a file, mark done, delete
+- **Number Guessing** — guess a random number between 1-100
+- **Password Generator** — generates random passwords with optional symbols
+- **JS Calculator** — browser calculator built with vanilla JavaScript
+- **Python Calculator** — command-line calculator in Python
