@@ -1,16 +1,21 @@
 # MyProjects
 
-A collection of projects built during my learning journey — spanning web development, Python scripting, data processing, and full-stack web design.
+A collection of smaller learning projects and experiments.
 
 ## Projects
 
 | Project | Description | Technologies |
 |---------|-------------|--------------|
-| [EcoVerda](./EcoVerda) | E-commerce website for eco-friendly and sustainable products | HTML, CSS, JavaScript |
-| [Data Classifier](./Data%20annotation%20and%20classifier) | Python tool for data annotation and reclassification | Python |
-| [JS Calculator](./JScalc) | Interactive calculator built with JavaScript | HTML, CSS, JavaScript |
-| [Python Calculator](./Python%20calc.py) | Command-line calculator in Python | Python |
+| [JS Calculator](./JScalc) | Interactive calculator built with vanilla JavaScript | HTML, CSS, JavaScript |
+| [Python Calculator](./python-calc/calculator.py) | Command-line calculator in Python | Python |
+
+## External Repos
+
+Projects that were previously part of this repo have been split into their own repositories:
+
+- [**eco-verda**](https://github.com/Praansu/eco-verda) — E-commerce website for eco-friendly products
+- [**data-classifier**](https://github.com/Praansu/data-classifier) — Python tool for data annotation and classification
 
 ## About
 
-This repo documents my progress as I explore different areas of software development — from front-end design to data processing and automation.
+This repo documents smaller projects and code snippets from my learning journey.
